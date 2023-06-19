@@ -132,6 +132,7 @@
     <ClInclude Include="include\basetypes.h" />
     <ClInclude Include="include\dlist.h" />
     <ClInclude Include="include\sds.h" />
+    <ClInclude Include="osmutex.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sds.c" />

@@ -27,6 +27,9 @@
     <ClInclude Include="include\sds.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="osmutex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="study.c">
