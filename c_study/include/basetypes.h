@@ -10,9 +10,16 @@
 #include <dirent.h>
 #endif
 
+#if defined(_MSC_VER)
+#include <BaseTsd.h>
+typedef SSIZE_T ssize_t;
+#endif
+
 #if defined(WIN32) && !defined(__cpluscplus)
 #define INLINE __inline
 #endif
+
+
 
 #ifndef TRUE
 #define TRUE	1
@@ -165,5 +172,13 @@ if (!(EXP))																				 \
 }
 #endif
 
+/* if NULL, assert*/
+#define ASSERT_NULL ASSERT
+
+#if defined(FORCED_ALIGNMENT)
+#define PACKED __attribute__ (aligned(8))
+#else
+#define PACKED
+#endif
 
 #endif

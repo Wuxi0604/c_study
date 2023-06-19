@@ -102,7 +102,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>ASSERT_ENABLE;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>ASSERT_ENABLE;WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
     </ClCompile>
@@ -131,8 +131,10 @@
     <ClInclude Include="c_study.h" />
     <ClInclude Include="include\basetypes.h" />
     <ClInclude Include="include\dlist.h" />
+    <ClInclude Include="include\sds.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="sds.c" />
     <ClCompile Include="study.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -24,9 +24,15 @@
     <ClInclude Include="c_study.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\sds.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="study.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sds.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

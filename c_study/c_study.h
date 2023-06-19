@@ -3,11 +3,12 @@
 
 #include "basetypes.h"
 #include "dlist.h"
+#include "sds.h"
 
 /* 单词的个数等于OUT->IN的次数 */
-#define OUT     0      //分隔符进入
-#define IN      1      //字符进入
-#define INIT    OUT    //初始化为OUT
+#define STATUS_OUT     0             //分隔符进入
+#define STATUS_IN      1             //字符进入
+#define STATUS_INIT    STATUS_OUT    //初始化为OUT
 
 #define MAX_PHONE_LEN  11 //电话号码长度
 
